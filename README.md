@@ -1,5 +1,5 @@
+<img src="https://github.com/user-attachments/assets/5726fab7-e528-479a-8461-d2379acf50b3" width="300">
 
-![bfeb3c71-c9e6-4d3e-bf7f-74f0be08e7da](https://github.com/user-attachments/assets/5726fab7-e528-479a-8461-d2379acf50b3)
 
 # 🛡️ pfSuriLogs 
 
