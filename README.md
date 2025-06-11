@@ -27,9 +27,9 @@
 
    // Pega aquí el HASH que generaste con el script 'generarhash.php'.
    define('PASSWORD_HASH', 'AQUI ENTRE LAS COMILLAS PEGA EL HASH SIN ESPACIOS');
-   ```
+   
 
-4. **Configura las interfaces de red y sus rutas:**
+5. **Configura las interfaces de red y sus rutas:**
 
    Busca la siguiente linea:
 
