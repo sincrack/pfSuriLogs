@@ -18,28 +18,39 @@
    visita la url de tu pfsense /generarhash.php y genera tu contraseña
    
 
-3. **Edita `pfsurilogs.php` y configura tus credenciales con el hash generado:**
+3. **Edita `pfsurilogs.php` y configura tus credenciales de acceso:**
 
-   Busca la siguiente linea:
+   Abre el archivo `pfsurilogs.php` y localiza el bloque de configuración de seguridad:
 
+   ```php
    // --- ⚙️ 1. CONFIGURACIÓN DE SEGURIDAD ---
    define('USERNAME', 'admin'); 
 
    // Pega aquí el HASH que generaste con el script 'generarhash.php'.
-   define('PASSWORD_HASH', 'AQUI ENTRE LAS COMILLAS PEGA EL HASH SIN ESPACIOS');
-   
+   define('PASSWORD_HASH', 'AQUÍ_ENTRA_EL_HASH_GENERADO_SIN_ESPACIOS');
+   ```
 
-5. **Configura las interfaces de red y sus rutas:**
+   > 🛡️ **Nota:** No pegues la contraseña en texto plano. Usa siempre el hash generado con `generarhash.php`.
 
-   Busca la siguiente linea:
+---
 
+5. **Configura las interfaces de red y las rutas de los logs:**
+
+   En el mismo archivo, busca el siguiente bloque:
+
+   ```php
    // --- A PARTIR DE AQUÍ, EL CÓDIGO COMPLETO DEL VISOR ---
    define('INTERFACES', [
        'wan1' => ['name' => 'WAN1 (pppoe164118)', 'path' => '/var/log/suricata/suricata_pppoe164118/'],
-       'lan'  => ['name' => 'LAN (vtnet131562)',   'path' => '/var/log/suricata/suricata_vtnet131562/'],
-       'wan2' => ['name' => 'WAN2 (vtnet244995)',  'path' => '/var/log/suricata/suricata_vtnet244995/'],
-  
-   Simplemente nombra las interfaces como se llamen las tuyas y apunta donde tienen sus logs
+       'lan'  => ['name' => 'LAN (vtnet131562)',  'path' => '/var/log/suricata/suricata_vtnet131562/'],
+       'wan2' => ['name' => 'WAN2 (vtnet244995)', 'path' => '/var/log/suricata/suricata_vtnet244995/'],
+   ]);
+   ```
+
+   Cambia los nombres de las interfaces y las rutas según tu configuración en pfSense.
+
+   > 📁 **Tip:** Puedes ver los nombres exactos de las interfaces y sus rutas en `/var/log/suricata/`. Asegúrate de usar los mismos nombres de carpeta que aparecen allí.
+
 
 ---
 
