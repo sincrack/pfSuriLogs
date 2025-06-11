@@ -1,8 +1,8 @@
-# 🛡️ PfSuriLogs 
+# 🛡️ pfSuriLogs 
 
 Visor web para logs de Suricata en pfSense
 
-**PfSuriLogs** es una herramienta ligera desarrollada en **PHP puro** para visualizar los logs de Suricata en **pfSense**, sin frameworks ni dependencias externas.
+**pfSuriLogs** es una herramienta ligera desarrollada en **PHP puro** para visualizar los logs de Suricata en **pfSense**, sin frameworks ni dependencias externas.
 
 > 💡 Ideal para administradores de red que quieran un visor rápido, personalizable y seguro para múltiples interfaces.
 
