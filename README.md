@@ -21,6 +21,7 @@
 3. **Edita `pfsurilogs.php` y configura tus credenciales con el hash generado:**
 
    Busca la siguiente linea:
+
    // --- ⚙️ 1. CONFIGURACIÓN DE SEGURIDAD ---
    define('USERNAME', 'admin'); 
 
@@ -31,6 +32,7 @@
 4. **Configura las interfaces de red y sus rutas:**
 
    Busca la siguiente linea:
+
    // --- A PARTIR DE AQUÍ, EL CÓDIGO COMPLETO DEL VISOR ---
    define('INTERFACES', [
        'wan1' => ['name' => 'WAN1 (pppoe164118)', 'path' => '/var/log/suricata/suricata_pppoe164118/'],
