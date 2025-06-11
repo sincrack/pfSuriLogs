@@ -34,7 +34,7 @@
 
 ---
 
-5. **Configura las interfaces de red y las rutas de los logs:**
+4. **Configura las interfaces de red y las rutas de los logs:**
 
    En el mismo archivo, busca el siguiente bloque:
 
