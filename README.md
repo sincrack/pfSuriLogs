@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/5726fab7-e528-479a-8461-d2379acf50b3" width="300">
+<img src="https://github.com/user-attachments/assets/5726fab7-e528-479a-8461-d2379acf50b3" width="600">
 
 
 # 🛡️ pfSuriLogs 
